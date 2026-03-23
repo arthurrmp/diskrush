@@ -1,0 +1,26 @@
+[package]
+name = "diskrush"
+version = "0.0.1"
+edition = "2021"
+description = "Beautiful TUI disk speed benchmark for your terminal"
+license = "MIT"
+repository = "https://github.com/arthurrmp/diskrush"
+keywords = ["benchmark", "disk", "ssd", "tui", "terminal"]
+categories = ["command-line-utilities"]
+readme = "README.md"
+
+[dependencies]
+ratatui = "0.29"
+crossterm = "0.28"
+rand = "0.9"
+tempfile = "3"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[target.'cfg(unix)'.dependencies]
+libc = "0.2"
+
+[profile.release]
+opt-level = 3
+lto = true
+strip = true
