@@ -6,7 +6,6 @@
 <p align="center">Blazing-fast disk benchmark TUI, built in Rust.</p>
 
 <p align="center">
-  <a href="https://crates.io/crates/diskrush"><img src="https://img.shields.io/crates/v/diskrush.svg" alt="crates.io"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License"></a>
 </p>
 
